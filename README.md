@@ -1,41 +1,36 @@
-# Hi, I'm Rick Medeiros 👋
-### Aspiring Software Engineer | Seeking Summer 2026 Internships & Co-ops (North America)
+# Hi, I'm RyK Medeiros ⚡
 
-I am a Software Engineering student (Class of 2028) focused on building high-performance automation systems, fintech integrations, and AI-driven tools. I specialize in bridging the gap between complex backend logic and seamless user experiences.
+**Software Engineer | Automating Workflows & Architecting End-to-End Solutions**
 
----
+I am a Software Engineering student (Class of 2028) in Brazil with a "product-first" mentality. I don't just write scripts; I build robust, monetized systems capable of handling high concurrency, secure transactions, and real-world business friction. 
 
-## 🚀 Professional Focus
-* **Backend Systems:** Building scalable architectures using **Python** and **C#**.
-* **Fintech & Automation:** Developing secure payment flows and automated provisioning systems.
-* **Product Sense:** Creating high-conversion landing pages and tools optimized for user retention.
+My focus spans from decoupling backend logic (Python/FastAPI, C#) to delivering seamless frontend and desktop experiences (Next.js, Tauri).
 
-## 🛠️ Tech Stack
-* **Languages:** Python, C#, JavaScript (Node.js).
-* **Backend:** Discord.js, REST APIs, KeyAuth Integration.
-* **Database:** SQLite (SQL), Quick.db.
-* **Tools:** Git, Docker, Discloud (Production Deployment).
+### 🚀 Featured Engineering Work
 
----
+#### 1. Pantero: High-Performance Desktop Automation Engine
+An end-to-end desktop application engineered to eliminate digital marketing bottlenecks.
+* **Architecture:** Decoupled backend using **Python (FastAPI)** with a **Next.js/React** frontend, bundled natively via **Tauri**.
+* **Technical Challenge:** Solved critical data corruption and I/O bottlenecks during high-volume browser automation (Selenium) by implementing **SQLite in WAL mode** and asynchronous task queues.
 
-## 📂 Featured Projects
+#### 2. E-Commerce & Fintech Integration (Rage Store)
+A fully automated digital delivery and sales infrastructure.
+* **Architecture:** Built with **Node.js** and integrated directly with the **Mercado Pago API**.
+* **Impact:** Engineered a zero-touch sales cycle, handling real-time PIX payment validation, webhooks, and instant cryptographic product delivery.
 
-### [🛒 Rage Store: Integrated E-commerce System](https://github.com/RickMdrs/discord-ecommerce-bot)
-A full-stack sales bot with real-time **Mercado Pago API** integration.
-* **Impact:** Automated the entire sales cycle, from PIX payment validation to instant product delivery.
-* **Tech:** Node.js, SQLite, Fintech API integration.
+#### 3. Automated Licensing & Security Middleware
+A secure backend service for software subscription lifecycle management.
+* **Architecture:** Integrated with the **KeyAuth API** to manage hardware-locked (HWID) licensing.
+* **Impact:** Replaced manual administrative provisioning with automated, encrypted session handling, ensuring secure user access and retention.
 
-### [🛡️ Automated License Provisioning Bot](https://github.com/RickMdrs/ragestore-auth-bot)
-A secure middleware for software license management.
-* **Impact:** Reduced manual admin workload by 100% through automated user registration via **KeyAuth API**.
-* **Tech:** Cryptographic session handling, environment security best practices.
+### 🛠️ Core Tech Stack
 
-### [🐾 High-Conversion Affiliate Hub](https://github.com/RickMdrs/Page_Pantero)
-A mobile-first landing page optimized for affiliate marketing traffic.
-* **Impact:** Achieved near-zero Time to Interactive (TTI) using pure CSS/HTML, maximizing mobile conversion.
+* **Languages:** Python, C#, TypeScript, JavaScript
+* **Backend & APIs:** FastAPI, Node.js, RESTful Architecture
+* **Frontend & Desktop:** Next.js, React, Tauri, Tailwind CSS
+* **Data & Infra:** SQLite (WAL), Quick.db, Git, Docker
 
 ---
+*Currently open to Global Software Engineering Internships (US/CA/Remote) for Summer 2026. J-1 Visa eligible.*
 
-## 📫 Let's Connect
-* **LinkedIn:** www.linkedin.com/in/ryk-medeiros
-* **Location:** Based in Brazil (Open to Relocation/Sponsorship for Summer 2026)
+📫 **Let's connect:** [LinkedIn](https://www.linkedin.com/in/ryk-medeiros) | ✉️ Reach out via email
