@@ -1,36 +1,67 @@
-# Hi, I'm RyK Medeiros ⚡
+# Hi, I'm Henrique Medeiros ⚡
 
-**Software Engineer | Automating Workflows & Architecting End-to-End Solutions**
+**Full-stack Engineer — automation, payments and desktop apps**
 
-I am a Software Engineering student (Class of 2028) in Brazil with a "product-first" mentality. I don't just write scripts; I build robust, monetized systems capable of handling high concurrency, secure transactions, and real-world business friction. 
-
-My focus spans from decoupling backend logic (Python/FastAPI, C#) to delivering seamless frontend and desktop experiences (Next.js, Tauri).
-
-### 🚀 Featured Engineering Work
-
-#### 1. Pantero: High-Performance Desktop Automation Engine
-An end-to-end desktop application engineered to eliminate digital marketing bottlenecks.
-* **Architecture:** Decoupled backend using **Python (FastAPI)** with a **Next.js/React** frontend, bundled natively via **Tauri**.
-* **Technical Challenge:** Solved critical data corruption and I/O bottlenecks during high-volume browser automation (Selenium) by implementing **SQLite in WAL mode** and asynchronous task queues.
-
-#### 2. E-Commerce & Fintech Integration (Rage Store)
-A fully automated digital delivery and sales infrastructure.
-* **Architecture:** Built with **Node.js** and integrated directly with the **Mercado Pago API**.
-* **Impact:** Engineered a zero-touch sales cycle, handling real-time PIX payment validation, webhooks, and instant cryptographic product delivery.
-
-#### 3. Automated Licensing & Security Middleware
-A secure backend service for software subscription lifecycle management.
-* **Architecture:** Integrated with the **KeyAuth API** to manage hardware-locked (HWID) licensing.
-* **Impact:** Replaced manual administrative provisioning with automated, encrypted session handling, ensuring secure user access and retention.
-
-### 🛠️ Core Tech Stack
-
-* **Languages:** Python, C#, TypeScript, JavaScript
-* **Backend & APIs:** FastAPI, Node.js, RESTful Architecture
-* **Frontend & Desktop:** Next.js, React, Tauri, Tailwind CSS
-* **Data & Infra:** SQLite (WAL), Quick.db, Git, Docker
+Software Engineering student (Class of 2028) in Brazil. I build complete products
+instead of isolated exercises: the automation engine, the web platform that sells it,
+the licensing that protects it, and the pipeline that ships it.
 
 ---
-*Currently open to Global Software Engineering Internships (US/CA/Remote) for Summer 2026. J-1 Visa eligible.*
 
-📫 **Let's connect:** [LinkedIn](https://www.linkedin.com/in/ryk-medeiros) | ✉️ Reach out via email
+## 🚀 Featured Work
+
+### Pantero IA — automation platform (desktop · web · browser extension)
+
+A commercial product across three integrated surfaces. Designed, built and maintained solo.
+
+**Desktop app — Python · FastAPI · Tauri (Rust) · Next.js**
+- Decoupled architecture: FastAPI backend and Next.js/TypeScript frontend bundled as a
+  native Windows app via Tauri, with the Python services shipped as sidecar binaries.
+- Headless browser orchestration (Selenium) driven by async task queues, with a driver
+  lock serializing access to the shared browser session.
+- **Trade-off:** chose SQLite in WAL mode over a client/server database — the app runs
+  entirely on the user's machine, so WAL gave me concurrent reads during writes without
+  forcing an external dependency onto the install.
+- Custom signed auto-update pipeline: minisign-signed artifacts, manifest proxied through
+  the website, binaries distributed via GitHub Releases.
+
+**Web platform — Next.js · Prisma · PostgreSQL**
+- Automated provisioning: payment confirmed → user created → license issued → welcome
+  email, with no manual step in between.
+- PIX checkout (Mercado Pago), webhooks verified with HMAC SHA-256 and retried on failure.
+- Redis-backed rate limiting, Cloudflare Turnstile, disposable-email blocking, and
+  first-touch attribution (UTMs + click IDs).
+- Referral system: unique codes, 90-day attribution cookie, recurring commission computed
+  per payment.
+
+**Browser extension — Chrome/Edge**
+- Generates the affiliate link and a ready-to-post message straight from the product page,
+  talking to the app's local backend — same license, no separate login.
+
+**Licensing & infra**
+- Hardware-locked (HWID) licensing via KeyAuth, with plan-based feature gating enforced
+  server-side rather than in the UI.
+- Cloudflare Worker for click tracking on a custom domain, cron jobs, Sentry, admin panel.
+
+---
+
+### Rage Store — automated digital delivery
+
+- **Node.js** service integrated with the **Mercado Pago API**.
+- Zero-touch sales cycle: real-time PIX validation, webhook handling and instant
+  automated product delivery.
+
+---
+
+## 🛠️ Tech Stack
+
+**Languages:** Python · TypeScript · JavaScript · C#
+**Backend:** FastAPI · Node.js · REST APIs · async task queues
+**Frontend & Desktop:** Next.js · React · Tauri (Rust) · Tailwind CSS
+**Data & Infra:** PostgreSQL (Prisma) · SQLite (WAL) · Cloudflare Workers · Vercel · Git
+
+---
+
+*Open to Software Engineering internships and junior roles — remote or São Luís/MA, Brazil.*
+
+📫 [LinkedIn](https://www.linkedin.com/in/ryk-medeiros) · ✉️ Email: rick.medeiros223@icloud.com
