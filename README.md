@@ -7,7 +7,7 @@ Estudante de Engenharia de Software na UNDB (conclusão em 2028), em São Luís/
 - 💼 **Buscando estágio** em Engenharia de Software, Desenvolvimento ou Tecnologia (presencial em São Luís ou remoto)
 - 🏆 **Menção honrosa** no Hackathon CREA Maranhão 2025
 - 🚀 Criei e mantive sozinho um produto comercial com app desktop, plataforma web e extensão de navegador
-- 🌱 Estudando atualmente: computação em nuvem (Azure) e inteligência artificial aplicada
+- 🌱 Estudando atualmente: computação em nuvem e inteligência artificial aplicada
 
 ---
 
