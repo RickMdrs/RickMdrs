@@ -1,67 +1,76 @@
-# Hi, I'm Henrique Medeiros ⚡
+# Olá, eu sou o Henrique Medeiros ⚡
 
-**Full-stack Engineer — automation, payments and desktop apps**
+**Desenvolvedor Full-Stack | Automação · Sistemas de Pagamento · Aplicativos Desktop e Mobile**
 
-Software Engineering student (Class of 2028) in Brazil. I build complete products
-instead of isolated exercises: the automation engine, the web platform that sells it,
-the licensing that protects it, and the pipeline that ships it.
+Estudante de Engenharia de Software na UNDB (conclusão em 2028), em São Luís/MA. Gosto de construir produtos completos que resolvem problemas reais, da ideia ao cliente usando: código, infraestrutura, pagamento, entrega e suporte.
 
----
-
-## 🚀 Featured Work
-
-### Pantero IA — automation platform (desktop · web · browser extension)
-
-A commercial product across three integrated surfaces. Designed, built and maintained solo.
-
-**Desktop app — Python · FastAPI · Tauri (Rust) · Next.js**
-- Decoupled architecture: FastAPI backend and Next.js/TypeScript frontend bundled as a
-  native Windows app via Tauri, with the Python services shipped as sidecar binaries.
-- Headless browser orchestration (Selenium) driven by async task queues, with a driver
-  lock serializing access to the shared browser session.
-- **Trade-off:** chose SQLite in WAL mode over a client/server database — the app runs
-  entirely on the user's machine, so WAL gave me concurrent reads during writes without
-  forcing an external dependency onto the install.
-- Custom signed auto-update pipeline: minisign-signed artifacts, manifest proxied through
-  the website, binaries distributed via GitHub Releases.
-
-**Web platform — Next.js · Prisma · PostgreSQL**
-- Automated provisioning: payment confirmed → user created → license issued → welcome
-  email, with no manual step in between.
-- PIX checkout (Mercado Pago), webhooks verified with HMAC SHA-256 and retried on failure.
-- Redis-backed rate limiting, Cloudflare Turnstile, disposable-email blocking, and
-  first-touch attribution (UTMs + click IDs).
-- Referral system: unique codes, 90-day attribution cookie, recurring commission computed
-  per payment.
-
-**Browser extension — Chrome/Edge**
-- Generates the affiliate link and a ready-to-post message straight from the product page,
-  talking to the app's local backend — same license, no separate login.
-
-**Licensing & infra**
-- Hardware-locked (HWID) licensing via KeyAuth, with plan-based feature gating enforced
-  server-side rather than in the UI.
-- Cloudflare Worker for click tracking on a custom domain, cron jobs, Sentry, admin panel.
+- 💼 **Buscando estágio** em Engenharia de Software, Desenvolvimento ou Tecnologia (presencial em São Luís ou remoto)
+- 🏆 **Menção honrosa** no Hackathon CREA Maranhão 2025
+- 🚀 Criei e mantive sozinho um produto comercial com app desktop, plataforma web e extensão de navegador
+- 🌱 Estudando atualmente: computação em nuvem (Azure) e inteligência artificial aplicada
 
 ---
 
-### Rage Store — automated digital delivery
+## 🚀 Projetos em destaque
 
-- **Node.js** service integrated with the **Mercado Pago API**.
-- Zero-touch sales cycle: real-time PIX validation, webhook handling and instant
-  automated product delivery.
+### Pantero IA | Plataforma de automação para afiliados
+*Desktop · Web · Extensão de navegador | Projeto solo, encerrado em 2026*
+
+Produto comercial que automatizava o trabalho de afiliados digitais: monitorava grupos de ofertas, convertia links em links de afiliado de várias lojas e republicava tudo automaticamente. Fiz sozinho produto, código, marketing e vendas.
+
+**App desktop**: Python · FastAPI · Tauri (Rust) · Next.js
+- Arquitetura desacoplada: backend em FastAPI e frontend em Next.js/TypeScript, empacotados como app nativo de Windows com Tauri
+- Automação de navegador (Selenium) com filas de tarefas assíncronas e controle de concorrência
+- Banco local SQLite em modo WAL: o app roda 100% na máquina do usuário, sem depender de servidor externo
+- Atualização automática com arquivos assinados digitalmente e distribuição via GitHub Releases
+
+**Plataforma web**: Next.js · Prisma · PostgreSQL
+- Fluxo 100% automático: pagamento confirmado → conta criada → licença emitida → e-mail de boas-vindas
+- Checkout PIX (Mercado Pago) com webhooks validados por HMAC SHA-256 e reenvio em caso de falha
+- Segurança: rate limiting com Redis, Cloudflare Turnstile e bloqueio de e-mails descartáveis
+- Programa de indicação com códigos únicos e comissão recorrente
+
+**Extensão de navegador**: Chrome/Edge
+- Gera o link de afiliado e a mensagem pronta direto da página do produto, integrada ao app local
+
+**Licenciamento e infraestrutura**
+- Licença vinculada ao hardware (KeyAuth), com recursos por plano validados no servidor
+- Cloudflare Workers para rastreamento de cliques, tarefas agendadas, monitoramento com Sentry e painel administrativo
 
 ---
 
-## 🛠️ Tech Stack
-
-**Languages:** Python · TypeScript · JavaScript · C#
-**Backend:** FastAPI · Node.js · REST APIs · async task queues
-**Frontend & Desktop:** Next.js · React · Tauri (Rust) · Tailwind CSS
-**Data & Infra:** PostgreSQL (Prisma) · SQLite (WAL) · Cloudflare Workers · Vercel · Git
+### Rage Store | Vendas com entrega digital automática
+*Node.js · API Mercado Pago*
+- Ciclo de venda sem intervenção manual: validação de PIX em tempo real, webhooks e entrega instantânea do produto
 
 ---
 
-*Open to Software Engineering internships and junior roles — remote or São Luís/MA, Brazil.*
+### Prumo RDO | App de Registro Diário de Obra
+*React Native (Expo) · TypeScript · Supabase | Projeto em equipe para uma construtora real*
+- Substitui os registros de obra em papel e WhatsApp por um app com funcionamento offline, assinatura digital e geração de PDF
+- Fui responsável pela especificação de requisitos e pelas regras de negócio
 
-📫 [LinkedIn](https://www.linkedin.com/in/ryk-medeiros) · ✉️ Email: rick.medeiros223@icloud.com
+---
+
+### Ecos do Maracanã | Museu em Realidade Virtual
+*Unity · C# · Meta Quest*
+- Experiência imersiva em VR sobre o patrimônio cultural maranhense, com artefatos interativos e narração
+
+---
+
+## 🛠️ Tecnologias
+
+**Linguagens:** Python · TypeScript · JavaScript · C# · Rust
+**Backend:** FastAPI · Node.js · REST APIs · filas assíncronas · webhooks
+**Frontend, Desktop e Mobile:** Next.js · React · React Native (Expo) · Tauri · Tailwind CSS · Unity
+**Dados e Infraestrutura:** PostgreSQL · Supabase · Prisma · SQLite · Redis · Cloudflare Workers · Vercel · Sentry · Git
+**IA:** LLMs e IA generativa · prompt engineering · desenvolvimento assistido por IA (Claude Code)
+
+---
+
+## 📫 Contato
+
+- LinkedIn: [linkedin.com/in/ryk-medeiros](https://www.linkedin.com/in/ryk-medeiros)
+- E-mail: [rick.medeiros223@icloud.com](mailto:rick.medeiros223@icloud.com)
+
+*Aberto a oportunidades de estágio e vagas júnior em Engenharia de Software: remoto ou em São Luís/MA.*
